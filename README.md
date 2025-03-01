@@ -19,19 +19,19 @@ AI Career Coach is a Next.js application designed to help users advance their ca
 
 ### Industry Insights
 
-![Industry Insights](screenshots/industry-insights.png)
+![Industry Insights](public/screenshots/industry-insights.png)
 
 ### Interview Preparation
 
-![Interview Preparation](screenshots/interview-preparation.png)
+![Interview Preparation](public/screenshots/interview-preparation.png)
 
 ### Mock Interview
 
-![Industry Insights](screenshots/mock-interview.png)
+![Industry Insights](public/screenshots/mock-interview.png)
 
 ### Smart Resume Creation
 
-![Smart Resume Creation](screenshots/resume-builder.png)
+![Smart Resume Creation](public/screenshots/resume-builder.png)
 
 ## Getting Started
 
