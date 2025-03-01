@@ -13,9 +13,9 @@ AI Career Coach is a Next.js application designed to help users advance their ca
 
 ### Home Page
 
-![Home Page](screenshots/home1.png)
+![Home Page](public/screenshots/home1.png)
 
-![Home Page](screenshots/home2.png)
+![Home Page](public/screenshots/home2.png)
 
 ### Industry Insights
 
