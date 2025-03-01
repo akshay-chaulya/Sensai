@@ -1,15 +1,28 @@
+"use client";
+
 import { industries } from "@/app/data/industries";
 import OnboardingFrom from "./_components/onboarding-form";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { getUserOnboardingStatus } from "@/actions/user";
-import { redirect } from "next/navigation";
 
-const OnboardingPage = async () => {
-  // Check if user is already onboarded
-  const { isOnboarded } = await getUserOnboardingStatus();
+const OnboardingPage = () => {
+  const router = useRouter();
 
-  if (isOnboarded) {
-    redirect("/dashboard");
-  }
+  useEffect(() => {
+    const checkOnboardingStatus = async () => {
+      try {
+        const { isOnboarded } = await getUserOnboardingStatus();
+        if (isOnboarded) {
+          router.push("/dashboard");
+        }
+      } catch (error) {
+        console.error("Error checking onboarding status: ", error.message);
+      }
+    };
+
+    checkOnboardingStatus();
+  }, [router]);
 
   return (
     <main>
