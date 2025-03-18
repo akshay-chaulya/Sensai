@@ -47,11 +47,6 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-          <Link href="#">
-            <Button size="lg" className="px-8" variant="outline">
-              Get Started
-            </Button>
-          </Link>
         </div>
 
         <div className="hero-image-wrapper mt-5 md:mt-0 px-8">
